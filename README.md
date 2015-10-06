@@ -30,19 +30,19 @@ Instructions
 
 * Add the following permission to use the pop-up window on the Android Manifest.
 
-`` `
+```xml
 <uses-permission android: name = "android.permission.SYSTEM_ALERT_WINDOW" />
-`` `
+```
 
   
   
 
-* Add the view that the automatic scrolling feature scrolls to add to addTargetScrollView (view) method and removed removeTargetScrollView (view).
+* Add the view that the automatic scrolling feature scrolls to add to addTargetScrollView(view) method and removed removeTargetScrollView(view).
 Activity or Fragment of a scroll view allows calls to be fit to Create and Destory LifeCycle point.
 
 
 
-`` `
+```java
 Override
 protected void onCreate (Bundle savedInstanceState) {
    
@@ -63,9 +63,9 @@ protected void onDestroy () {
 
 }
 
-`` `
+```
 
-* The Android 6.0 (marshmallow) Starting obtain permission directly, and then obtained permission to call the addTargetScrollView (view).
+* The Android 6.0 (Marshmallow) Starting obtain permission directly, and then obtained permission to call the addTargetScrollView(view).
   
   
   
