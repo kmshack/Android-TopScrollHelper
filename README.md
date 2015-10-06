@@ -9,7 +9,7 @@ TopScrollHelper
 
 
 
-자동스크롤 지원View:
+자동스크롤 지원 View:
 * ScrollView
 * NestedScrollView
 * WebView
@@ -19,13 +19,14 @@ TopScrollHelper
 
 <br>
 <br>
+
 사용법:
 
 안드로이드 Manifest에 다음과 윈도우 팝업을 사용할 수 있도록 퍼미션을 추가 한다.
 
-<code>
+```
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-</code>
+```
 
 
 
@@ -39,8 +40,7 @@ Activity또는 Fragment의 스크롤뷰가 Create와 Destory되는 LifeCycle 시
 안드로이드 6.0(마시멜로)부터는 직접 퍼미션을 얻어야 하며, 퍼미션을 얻은 후 addTargetScrollView(view)를 호출한다.
 
 
-<code>
-
+```
 @Override
 protected void onCreate(Bundle savedInstanceState) {
  …
@@ -59,4 +59,4 @@ protected void onDestroy() {
  super.onDestroy();
 }
 
-</code>
+```
