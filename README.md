@@ -6,7 +6,7 @@ Android developers can use this functionality with a simple code.
  
  
 
-! [screens] (screen.png)
+![screens](screen.png)
 
   
   
@@ -43,7 +43,7 @@ Activity or Fragment of a scroll view allows calls to be fit to Create and Desto
 
 
 ```java
-Override
+@Override
 protected void onCreate (Bundle savedInstanceState) {
    
    super.onCreate(savedInstanceState);
@@ -55,7 +55,7 @@ protected void onCreate (Bundle savedInstanceState) {
 
  
 
-Override
+@Override
 protected void onDestroy () {
 
    TopScrollHelper.getInstance (getApplicationContext ()) removeTargetScrollView (mNestedScrollView);
@@ -74,12 +74,17 @@ video
 -----------
 https://youtu.be/dlZoVnZoIVk
 
+  
+  
 
-
+  
 
 -----------
 -----------
------------
+
+  
+
+  
 
 
 
@@ -115,8 +120,8 @@ https://youtu.be/dlZoVnZoIVk
 
 * 안드로이드 Manifest에 다음과 윈도우 팝업을 사용할 수 있도록 퍼미션을 추가 한다.
 
-```
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+```xml
+<uses-permission android: name = "android.permission.SYSTEM_ALERT_WINDOW" />
 ```
 
   
@@ -127,26 +132,28 @@ Activity또는 Fragment의 스크롤뷰가 Create와 Destory되는 LifeCycle 시
 
 
 
-```
-@Override
-protected void onCreate(Bundle savedInstanceState) {
- …
 
- mNestedScrollView = (NestedScrollView) findViewById(R.id.scrollView);
- TopScrollHelper.getInstance(getApplicationContext()).addTargetScrollView(mNestedScrollView);
+```java
+@Override
+protected void onCreate (Bundle savedInstanceState) {
+   
+   super.onCreate(savedInstanceState);
+   ...
+   
+   mNestedScrollView = (NestedScrollView) findViewById (R.id.scrollView);
+   TopScrollHelper.getInstance (getApplicationContext ()) addTargetScrollView (mNestedScrollView);
 }
 
- 
+ 
 
 @Override
-protected void onDestroy() {
- …
+protected void onDestroy () {
 
- TopScrollHelper.getInstance(getApplicationContext()).removeTargetScrollView(mNestedScrollView);
- super.onDestroy();
+   TopScrollHelper.getInstance (getApplicationContext ()) removeTargetScrollView (mNestedScrollView);
+   super.onDestroy ();
+
 }
 
-```
 
 * 안드로이드 6.0(마시멜로)부터는 직접 퍼미션을 얻어야 하며, 퍼미션을 얻은 후 addTargetScrollView(view)를 호출한다.
   
