@@ -50,8 +50,8 @@ protected void onCreate (Bundle savedInstanceState) {
    super.onCreate(savedInstanceState);
    ...
    
-   mNestedScrollView = (NestedScrollView) findViewById (R.id.scrollView);
-   TopScrollHelper.getInstance (getApplicationContext ()) addTargetScrollView (mNestedScrollView);
+   mNestedScrollView = (NestedScrollView)findViewById(R.id.scrollView);
+   TopScrollHelper.getInstance(getApplicationContext()).addTargetScrollView(mNestedScrollView);
 }
 
  
@@ -59,8 +59,8 @@ protected void onCreate (Bundle savedInstanceState) {
 @Override
 protected void onDestroy () {
 
-   TopScrollHelper.getInstance (getApplicationContext ()) removeTargetScrollView (mNestedScrollView);
-   super.onDestroy ();
+   TopScrollHelper.getInstance(getApplicationContext()).removeTargetScrollView(mNestedScrollView);
+   super.onDestroy();
 
 }
 
@@ -135,8 +135,8 @@ protected void onCreate (Bundle savedInstanceState) {
    super.onCreate(savedInstanceState);
    ...
    
-   mNestedScrollView = (NestedScrollView) findViewById (R.id.scrollView);
-   TopScrollHelper.getInstance (getApplicationContext ()) addTargetScrollView (mNestedScrollView);
+   mNestedScrollView = (NestedScrollView)findViewById(R.id.scrollView);
+   TopScrollHelper.getInstance(getApplicationContext()).addTargetScrollView(mNestedScrollView);
 }
 
  
@@ -144,10 +144,11 @@ protected void onCreate (Bundle savedInstanceState) {
 @Override
 protected void onDestroy () {
 
-   TopScrollHelper.getInstance (getApplicationContext ()) removeTargetScrollView (mNestedScrollView);
-   super.onDestroy ();
+   TopScrollHelper.getInstance(getApplicationContext()).removeTargetScrollView(mNestedScrollView);
+   super.onDestroy();
 
 }
+
 ```
 
 
