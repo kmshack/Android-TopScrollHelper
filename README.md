@@ -1,6 +1,8 @@
 In the View with the function of scrolling of the code written for Android provides convenience for the user back to the top. If you double tap the top of the Android system bar The View with the ability to scroll to the top of the scroll are. Double-touch the clock in the system bar of iPhone features that are identical to scroll to the top.
 
 Android developers can use this functionality with a simple code.
+[![Analytics](https://ga-beacon.appspot.com/UA-51734472-3/Android-TopScrollHelper/readme)](https://github.com/kmshack/Android-TopScrollHelper)
+
  
  
 
