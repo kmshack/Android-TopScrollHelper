@@ -40,7 +40,6 @@ TopScrollHelper
 * 자동 스크롤 기능을 추가 하기위해 스크롤 되는 뷰를 addTargetScrollView(view)메소드로 추가하고 removeTargetScrollView(view)로 제거한다.
 Activity또는 Fragment의 스크롤뷰가 Create와 Destory되는 LifeCycle 시점에 맞게 호출 해준다.
 
-안드로이드 6.0(마시멜로)부터는 직접 퍼미션을 얻어야 하며, 퍼미션을 얻은 후 addTargetScrollView(view)를 호출한다.
 
 
 ```
@@ -64,6 +63,8 @@ protected void onDestroy() {
 
 ```
 
+* 안드로이드 6.0(마시멜로)부터는 직접 퍼미션을 얻어야 하며, 퍼미션을 얻은 후 addTargetScrollView(view)를 호출한다.
+  
   
   
 
