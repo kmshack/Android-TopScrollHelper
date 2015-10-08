@@ -62,8 +62,7 @@ public class TopScrollHelper {
         mTargetScrollView = new ArrayList<View>();
         mGestureDetector = new GestureDetector(mContext, new SimpleOnGestureListener() {
 
-            @Override
-            public boolean onDoubleTap(MotionEvent e) {
+            private void doScroll(){
                 for (View view : mTargetScrollView) {
                     if (DEBUG)
                         Log.d(TAG, "is shown ? " + view.isShown());
@@ -89,6 +88,17 @@ public class TopScrollHelper {
                         }
                     }
                 }
+            }
+
+            @Override
+            public boolean onSingleTapUp(MotionEvent e) {
+                doScroll();
+                return super.onSingleTapUp(e);
+            }
+
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                doScroll();
                 return super.onDoubleTap(e);
             }
 

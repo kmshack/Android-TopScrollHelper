@@ -1,4 +1,4 @@
-In the View with the function of scrolling of the code written for Android provides convenience for the user back to the top. If you double tap the top of the Android system bar The View with the ability to scroll to the top of the scroll are. Double-touch the clock in the system bar of iPhone features that are identical to scroll to the top.
+In the View with the function of scrolling of the code written for Android provides convenience for the user back to the top. If you double tap the top of the Android system bar The View with the ability to scroll to the top of the scroll are. Tap the system bar of iPhone features that are identical to scroll to the top.
 
 Android developers can use this functionality with a simple code.
 
@@ -12,7 +12,7 @@ Android developers can use this functionality with a simple code.
   
   
 
-Auto-scroll Support View
+AutoScroll Support View
 -----------
 
 * ScrollView
@@ -29,7 +29,7 @@ Auto-scroll Support View
 Instructions
 -----------
 
-* Add the following permission to use the pop-up window on the Android Manifest.
+* Add the following permission to use the popup window on the Android Manifest.
 
 ```xml
 <uses-permission android: name = "android.permission.SYSTEM_ALERT_WINDOW" />
@@ -85,7 +85,7 @@ https://youtu.be/dlZoVnZoIVk
   
   
 
-안드로이드의 스크롤의 기능을 가진 View에서 최상단으로 돌아가기 위한 사용자들을 편의제공을 위해 작성된 코드이다. 안드로이드 상단 시스템바에 더블탭을 하면 스크롤의 기능을 가진 View들은 최상단으로 스크롤 하게 된다. 아이폰의 시스템바의 시계를 더블터치하면 최상단으로 스크롤 되는 기능과 동일하다.
+안드로이드의 스크롤의 기능을 가진 View에서 최상단으로 돌아가기 위한 사용자들을 편의제공을 위해 작성된 코드이다. 안드로이드 상단 시스템바에 더블탭을 하면 스크롤의 기능을 가진 View들은 최상단으로 스크롤 하게 된다. 아이폰의 시스템바 터치시 최상단으로 스크롤 되는 기능과 동일하다.
 
 안드로이드 개발자들은 간단한 코드를 통해 이와 같은 기능을 사용할 수 있다. 
  
