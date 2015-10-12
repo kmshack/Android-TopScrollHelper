@@ -70,6 +70,14 @@ protected void onDestroy () {
   
   
   
+  
+Sample App Download
+-----------
+https://play.google.com/store/apps/details?id=com.kmshack.topscrollsample
+
+  
+  
+
 
 Video
 -----------
@@ -155,6 +163,9 @@ protected void onDestroy () {
 * 안드로이드 6.0(마시멜로)부터는 직접 퍼미션을 얻어야 하며, 퍼미션을 얻은 후 addTargetScrollView(view)를 호출한다.
   
   
+Sample App Download
+-----------
+https://play.google.com/store/apps/details?id=com.kmshack.topscrollsample
   
 
 영상
