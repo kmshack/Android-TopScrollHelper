@@ -70,12 +70,19 @@ protected void onDestroy () {
   
   
   
+
+Gradle
+-----------
+```java
+compile 'com.kmshack.library:android-topscroll-helper:1.0.0'
+```
+[ ![Download](https://api.bintray.com/packages/kmshack/maven/android-topscroll-helper/images/download.svg) ](https://bintray.com/kmshack/maven/android-topscroll-helper/_latestVersion)
+
   
 Sample App Download
 -----------
 https://play.google.com/store/apps/details?id=com.kmshack.topscrollsample
 
-  
   
 
 
